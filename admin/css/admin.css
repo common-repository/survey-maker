@@ -1,0 +1,39 @@
+.ays-survey-menu-badge{
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    background: #ca4a1f;
+    margin-left: 5px;
+    border-radius: 20px;
+    padding: 2px 5px;
+}
+
+#adminmenu a.toplevel_page_quiz-maker.wp-menu-open div.wp-menu-image img {
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+#adminmenu a.toplevel_page_survey-maker div.wp-menu-name {    
+    transition: .3s ease-in-out;
+}
+#adminmenu a.toplevel_page_survey-maker div.wp-menu-image img {
+    width: 32px;
+    padding: 1px 0 0;
+    transition: .3s ease-in-out;
+}
+
+ul.ays-wp-notice-answers{
+    list-style-type: none;
+}
+
+#adminmenu li.toplevel_page_survey-maker ul.wp-submenu.wp-submenu-wrap li a {
+    transition: .3s ease-in-out;
+}
+#adminmenu li.toplevel_page_survey-maker ul.wp-submenu.wp-submenu-wrap li a[href*="feature"] {
+    color: #f50057;
+}

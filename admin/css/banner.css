@@ -1,0 +1,173 @@
+
+/* ~~ Top Navigation Bar ~~ */
+
+.ays-notice-banner{
+    width: calc(100% - 20px);
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+
+.ays-notice-banner #navigation-container {
+    width: 100%;
+    margin: 0 auto;
+    display:  flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.ays-notice-banner .navigation-bar {
+    width: 100%;
+    text-align:center;
+}
+.ays-notice-banner .navigation-bar a.logo-container{
+    margin: 0 0 0 20px;
+}
+.ays-notice-banner .navigation-bar a.logo-container .logo {
+    float: left;
+    width: 80px;
+}
+.ays-notice-banner .navigation-bar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: stretch;
+    padding: 0;
+    margin: 0 20px 0 0;
+    max-width: 100%;
+    min-width: 200px;
+    width: 100%;
+}
+
+.ays-notice-banner .navigation-bar li {
+    padding: 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 15px;
+}
+
+.ays-notice-banner .navigation-bar li.take_survay a:hover:after {
+    border-color: #f50057;
+}
+
+.ays-notice-banner .navigation-bar li.take_survay a {
+    color: #f50057;
+}
+
+.ays-notice-banner .navigation-bar li a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    letter-spacing: 0;
+}
+
+.ays-notice-banner .navigation-bar li a:after {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.ays-notice-banner .navigation-bar li a:hover:after{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 350ms ease-in-out;
+    width: 100%;
+}
+.ays-notice-banner .modile-ddmenu-lg {
+    display: none;
+}
+
+.ays-notice-banner .modile-ddmenu-sm,
+.ays-notice-banner .modile-ddmenu-md {
+    display: none;
+    position: relative;
+    width: 80px;
+}
+
+.ays-notice-banner #menu li a.toggle_ddmenu {
+    font-size:25px;
+    color:#fff;
+    width: 100%;
+}
+
+.ays-notice-banner #menu li a.toggle_ddmenu i.ays_fa{
+    transition: .1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.ays-notice-banner li ul.ddmenu {
+    display: none;
+    position: absolute;
+    right: -55px;
+    top: 50px;
+    z-index: 10000;
+    flex-direction: column;
+    width: fit-content;
+    min-width: 200px;
+    text-align: left;
+    background-color: #0093E9;
+    background-image: linear-gradient(-160deg, #80D0C7 0%, #0093E9 100%);
+}
+
+.ays-notice-banner li ul.ddmenu[data-expanded="true"] {
+    display: flex;
+    animation: slideInRight .2s;
+}
+
+.ays-notice-banner li ul.ddmenu li {
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 1080px){
+    .ays-notice-banner .modile-ddmenu-lg {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .ays-notice-banner .modile-ddmenu-md {
+        display: block;
+    }
+}
+@media screen and (max-width: 768px){    
+    .ays-notice-banner .modile-ddmenu-sm {
+        display: block;
+    }
+    .ays-notice-banner .modile-ddmenu-md {
+        display: none;
+    }
+}
+@media screen and (max-width: 530px){    
+    .ays-notice-banner .modile-ddmenu-sm {
+        display: block;
+    }
+    .ays-notice-banner .modile-ddmenu-md {
+        display: none;
+    }
+    .ays-notice-banner .modile-ddmenu-xs {
+        display: none;
+    }
+}
+
+
+/* ~~ Top Navigation Bar ~~ */
